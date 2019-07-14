@@ -1,0 +1,8 @@
+xeyes:
+  build: .
+  command: ["xeyes"]
+  environment:
+    - DISPLAY
+  volumes:
+    - /tmp/.X11-unix/:/tmp/.X11-unix/:ro
+    - .Xauthority.xeyes:/home/user/.Xauthority:ro
